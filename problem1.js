@@ -4,7 +4,6 @@
 
 */
 
-import { inventory } from './data.js'; 
 
 export function problem1(inventory, searchId) {
     for(let car of inventory) {
@@ -13,5 +12,7 @@ export function problem1(inventory, searchId) {
             return car; 
         }
     }
+    console.log('Car Not Found!'); 
+    return null; 
 }
 
